@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 /** V A R I A B L E S ********************************************************/
 volatile struct chbits{
 						unsigned spi:1; 

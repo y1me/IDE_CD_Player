@@ -1,5 +1,6 @@
 #ifndef HARDWARE_PROFILE_H
 
+
         #define HARDWARE_PROFILE_H
 
         #define CLOCK_FREQ          40000000

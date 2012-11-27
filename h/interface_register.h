@@ -1,6 +1,7 @@
 #ifndef INT_REG_H
 #define INT_REG_H
 
+
 void Reset_Hard(void);
 unsigned char Read_Error(void);  
 unsigned char Read_Sect_Count(void);

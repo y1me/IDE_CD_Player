@@ -2,7 +2,7 @@
 #include <p18f6722.h>
 #include "delays.h"
 
-void Reset_Hard(void)  //reset CD drive
+void Reset_Hard(void)   //reset CD drive
 {
 	CS0 = 0;
 	CS1 = 0;

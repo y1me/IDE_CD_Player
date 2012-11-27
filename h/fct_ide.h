@@ -2,8 +2,6 @@
 #define FCT_IDE_H
 
 
-
-
 unsigned char Mech_Stat(void);
 unsigned char Eject(void);
 unsigned char Load(void);

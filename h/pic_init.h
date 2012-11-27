@@ -10,7 +10,6 @@ void Timer0_Init(void);
 void Timer1_Init(void);
 void Timer2_Init(void);
 
-
 /***********************************************************************/
 
 #endif // PIC_INIT_H

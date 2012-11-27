@@ -1,4 +1,3 @@
-
 #include <p18f6722.h>
 #include <pic_init.h>
 #include <HardwareProfile.h>

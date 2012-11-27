@@ -2,7 +2,6 @@
 #include <HardwareProfile.h>
 #include <interface_register.h>
 
-
 unsigned char Mech_Stat(void)  //reset CD drive
 {
 	 unsigned int i,j;
