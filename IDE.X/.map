@@ -1,5 +1,5 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Thu Nov 29 12:32:35 2012
+Linker Map File - Created Thu Nov 29 16:46:11 2012
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -70,38 +70,38 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                 DELAYDAT1      udata   0x00001d       data   0x000001
                      gpr5      udata   0x000060       data   0x000066
             .udata_main.o      udata   0x0000c6       data   0x000035
-            .udata_putc.o      udata   0x0000fb       data   0x000000
-         .idata_fxm3232.o      idata   0x0000fb       data   0x000000
-         .udata_fxm3232.o      udata   0x0000fb       data   0x000000
-          .udata___init.o      udata   0x0000fb       data   0x000000
-          .idata___init.o      idata   0x0000fb       data   0x000000
-         .udata_sprintf.o      udata   0x0000fb       data   0x000000
-         .idata_sprintf.o      idata   0x0000fb       data   0x000000
-        .udata_vfprintf.o      udata   0x0000fb       data   0x000000
-        .idata_vfprintf.o      idata   0x0000fb       data   0x000000
-        .udata_fxd3232u.o      udata   0x0000fb       data   0x000000
-        .idata_fxd3232u.o      idata   0x0000fb       data   0x000000
-            .idata_putc.o      idata   0x0000fb       data   0x000000
-            .idata_user.o      idata   0x0000fb       data   0x000000
-      .udata__user_putc.o      udata   0x0000fb       data   0x000000
-             .idata_spi.o      idata   0x0000fb       data   0x000000
-             .udata_spi.o      udata   0x0000fb       data   0x000000
-         .idata_fct_ide.o      idata   0x0000fb       data   0x000000
-         .udata_fct_ide.o      udata   0x0000fb       data   0x000000
-.idata_interface_register.o      idata   0x0000fb       data   0x000000
-.udata_interface_register.o      udata   0x0000fb       data   0x000000
-        .idata_pic_init.o      idata   0x0000fb       data   0x000000
-        .udata_pic_init.o      udata   0x0000fb       data   0x000000
-                     gpr1      udata   0x0000fb       data   0x000000
-            .idata_main.o      idata   0x0000fb       data   0x000000
-           .idata_c018i.o      idata   0x0000fb       data   0x000000
-      .idata__user_putc.o      idata   0x0000fb       data   0x000000
-                     gpr3      udata   0x000100       data   0x0000e8
-                     gpr2      udata   0x0001e8       data   0x00000c
-           .udata_c018i.o      udata   0x0001f4       data   0x00000a
-            .udata_user.o      udata   0x0001fe       data   0x000002
+            .udata_user.o      udata   0x0000fb       data   0x000002
+        .idata_fxd3232u.o      idata   0x0000fd       data   0x000000
+         .udata_fxm3232.o      udata   0x0000fd       data   0x000000
+        .udata_fxd3232u.o      udata   0x0000fd       data   0x000000
+        .idata_vfprintf.o      idata   0x0000fd       data   0x000000
+        .udata_vfprintf.o      udata   0x0000fd       data   0x000000
+         .idata_sprintf.o      idata   0x0000fd       data   0x000000
+         .udata_sprintf.o      udata   0x0000fd       data   0x000000
+          .idata___init.o      idata   0x0000fd       data   0x000000
+          .udata___init.o      udata   0x0000fd       data   0x000000
+         .idata_fxm3232.o      idata   0x0000fd       data   0x000000
+            .idata_putc.o      idata   0x0000fd       data   0x000000
+            .udata_putc.o      udata   0x0000fd       data   0x000000
+      .udata__user_putc.o      udata   0x0000fd       data   0x000000
+      .idata__user_putc.o      idata   0x0000fd       data   0x000000
+            .idata_user.o      idata   0x0000fd       data   0x000000
+             .idata_spi.o      idata   0x0000fd       data   0x000000
+             .udata_spi.o      udata   0x0000fd       data   0x000000
+         .idata_fct_ide.o      idata   0x0000fd       data   0x000000
+         .udata_fct_ide.o      udata   0x0000fd       data   0x000000
+.idata_interface_register.o      idata   0x0000fd       data   0x000000
+.udata_interface_register.o      udata   0x0000fd       data   0x000000
+        .idata_pic_init.o      idata   0x0000fd       data   0x000000
+        .udata_pic_init.o      udata   0x0000fd       data   0x000000
+                     gpr1      udata   0x0000fd       data   0x000000
+            .idata_main.o      idata   0x0000fd       data   0x000000
+           .idata_c018i.o      idata   0x0000fd       data   0x000000
                      gpr7      udata   0x000700       data   0x000400
-                   .stack      udata   0x000e00       data   0x000100
+                   .stack      udata   0x000d00       data   0x000100
+                     gpr3      udata   0x000e00       data   0x0000e8
+                     gpr2      udata   0x000f00       data   0x00000c
+           .udata_c018i.o      udata   0x000f0c       data   0x00000a
             SFR_UNBANKED0      udata   0x000f62       data   0x00009e
 
 
@@ -373,8 +373,8 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                 CMCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-        CurrentAbsAddrMSF   0x0001f0       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-        CurrentRelAddrMSF   0x0001ec       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+        CurrentAbsAddrMSF   0x000f08       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+        CurrentRelAddrMSF   0x000f04       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                      DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                  DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                      DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
@@ -415,7 +415,7 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-               EndAddrMSF   0x0001e8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               EndAddrMSF   0x000f00       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                      FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                     FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                     FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
@@ -655,32 +655,32 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
              count_IR_BIT   0x0000e1       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                count_info   0x0000ef       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                 count_spi   0x0000ed       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-                curr_byte   0x0001f7       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-               curr_entry   0x0001f9       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                dataBlank   0x000178       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                  dataDAC   0x000100       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY1   0x000128       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY1_info   0x000198       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY2   0x000138       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY2_info   0x0001a8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY3   0x000148       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY3_info   0x0001b8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY4   0x000158       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY4_info   0x0001c8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY5   0x000168       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY5_info   0x0001d8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 dataREAD   0x000188       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                  dataSRC   0x000114       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 data_ptr   0x0001fb       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     flag   0x0001fe       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                  flagspi   0x0001ff       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                curr_byte   0x000f0f       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f11       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                dataBlank   0x000e78       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  dataDAC   0x000e00       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY1   0x000e28       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY1_info   0x000e98       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY2   0x000e38       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY2_info   0x000ea8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY3   0x000e48       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY3_info   0x000eb8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY4   0x000e58       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY4_info   0x000ec8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY5   0x000e68       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY5_info   0x000ed8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 dataREAD   0x000e88       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  dataSRC   0x000e14       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 data_ptr   0x000f13       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     flag   0x0000fb       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  flagspi   0x0000fc       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                    keypad   0x000060       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                keypad_log   0x0000d6       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                    length   0x0000c4       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                p_dataDSPY   0x0000c6       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                     p_spi   0x0000f1       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                product_id   0x000065       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                     prom   0x0001f4       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     prom   0x000f0c       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
              start_IR_LSB   0x0000e9       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
              start_IR_MSB   0x0000e5       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                trame_capt   0x0000d9       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
@@ -954,30 +954,30 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                     p_spi   0x0000f1       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                      AMSF   0x0000f3       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                      RMSF   0x0000f7       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-                  dataDAC   0x000100       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                  dataSRC   0x000114       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY1   0x000128       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY2   0x000138       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY3   0x000148       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY4   0x000158       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataDSPY5   0x000168       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                dataBlank   0x000178       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 dataREAD   0x000188       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY1_info   0x000198       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY2_info   0x0001a8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY3_info   0x0001b8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY4_info   0x0001c8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           dataDSPY5_info   0x0001d8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-               EndAddrMSF   0x0001e8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-        CurrentRelAddrMSF   0x0001ec       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-        CurrentAbsAddrMSF   0x0001f0       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                     prom   0x0001f4       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                curr_byte   0x0001f7       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-               curr_entry   0x0001f9       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 data_ptr   0x0001fb       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     flag   0x0001fe       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                  flagspi   0x0001ff       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                     flag   0x0000fb       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  flagspi   0x0000fc       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                       TOC   0x000700       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  dataDAC   0x000e00       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                  dataSRC   0x000e14       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY1   0x000e28       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY2   0x000e38       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY3   0x000e48       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY4   0x000e58       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataDSPY5   0x000e68       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                dataBlank   0x000e78       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 dataREAD   0x000e88       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY1_info   0x000e98       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY2_info   0x000ea8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY3_info   0x000eb8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY4_info   0x000ec8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           dataDSPY5_info   0x000ed8       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               EndAddrMSF   0x000f00       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+        CurrentRelAddrMSF   0x000f04       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+        CurrentAbsAddrMSF   0x000f08       data     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                     prom   0x000f0c       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x000f0f       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f11       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x000f13       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
              SSP2CON2bits   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                  SSP2CON2   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
              SSP2CON1bits   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
@@ -988,8 +988,8 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                   SSP2BUF   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
              ECCP2DELbits   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                  ECCP2DEL   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-              ECCP2ASbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                   ECCP2AS   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+              ECCP2ASbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                  ECCP3DEL   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
              ECCP3DELbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                   ECCP3AS   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
@@ -1001,8 +1001,8 @@ Linker Map File - Created Thu Nov 29 12:32:35 2012
                    TXREG2   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    RCREG2   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    SPBRG2   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-              CCP5CONbits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                   CCP5CON   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    CCPR5L   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                     CCPR5   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    CCPR5H   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm

@@ -675,22 +675,24 @@ void EjectLoad(void)
 
 void PlayPause(void)
 {   
+
+    //Mute
+    dataDAC.DataToWrite = 2;
+    dataDAC.DataRead = 0;
+    dataDAC.DataWrite = 0;
+    dataDAC.CSTiming = 2;
+    dataDAC._byte[4] = 0x12;
+    dataDAC._byte[5] = 0xA1;
+
     if ( Mech_Stat() == 1 )
     {
-        //Mute
-        dataDAC.DataToWrite = 2;
-        dataDAC.DataRead = 0;
-        dataDAC.DataWrite = 0;
-        dataDAC.CSTiming = 2;
-        dataDAC._byte[4] = 0x12;
-        dataDAC._byte[5] = 0xA1;
-
         Load();
-        LoadTOCInfo();
-        flag.mech = 1;
-        CDStatus = STOP;
-        TrackToPlay = 1;
     }
+    
+    LoadTOCInfo();
+    flag.mech = 1;
+    CDStatus = STOP;
+    TrackToPlay = 1;
 
     if (!flag.nodisc)
     {
