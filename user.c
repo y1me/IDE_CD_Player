@@ -690,11 +690,14 @@ void PlayPause(void)
     {
         Load();
     }
-    
-    LoadTOCInfo();
-    flag.mech = 1;
-    CDStatus = STOP;
-    TrackToPlay = 1;
+
+    if ( flag.mech == 0)
+    {
+        LoadTOCInfo();
+        flag.mech = 1;
+        CDStatus = STOP;
+        TrackToPlay = 1;
+    }
 
     if (!flag.nodisc)
     {
