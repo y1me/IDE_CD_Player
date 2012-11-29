@@ -88,6 +88,7 @@ void NextTrack(void);
 void PreviousTrack(void);
 void VolumeUp(void);
 void VolumeDown(void);
+void SoundLevel(unsigned char);
 void Mute(unsigned char );
 void SetAuxIn(void);
 unsigned char ConvertDigit4(unsigned char );
@@ -322,8 +323,8 @@ void InitPCM1792(void)
 	RST_DAC = 1;
 	Delay10KTCYx(10);//wait 1ms*x
 	
-	RightVol = 201;
-	LeftVol = 201;
+	RightVol = 195;
+	LeftVol = 195;
 	// config DAC Reg 16
 	S_DAC = 0;
 	spi_out(0x10);
@@ -929,81 +930,30 @@ void UpdateCurrentMSF(void)
 
 void VolumeUp(void)
 {
-    if(RightVol == 255)
+    if(RightVol != 255)
     {
-        RightVol = 255;
-        LeftVol = 255;
+	RightVol += 2;
+	LeftVol += 2;
+    }
+    
+    dataDAC.DataToWrite = 4;
+    dataDAC.DataRead = 0;
+    dataDAC.DataWrite = 0;
+    dataDAC.CSTiming = 2;
+    dataDAC._byte[4] = 0x10;
+    dataDAC._byte[5] = LeftVol;
+    dataDAC._byte[6] = 0x11;
+    dataDAC._byte[7] = RightVol;
 
-        dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
-        dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
-        dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-        dataDSPY2_info._byte[10] = d_m;//digit 2/4 m
-        dataDSPY3_info._byte[10] = d_a;//digit 3/4 a
-        dataDSPY4_info._byte[10] = d_x;//digit 4/4 x
-        dataDSPY5_info._byte[10] = d_void;//digit dp/4
-    }
-    else
-    {
-	RightVol += 3;
-	LeftVol += 3;
-    }
-        dataDAC.DataToWrite = 4;
-        dataDAC.DataRead = 0;
-        dataDAC.DataWrite = 0;
-        dataDAC.CSTiming = 2;
-        dataDAC._byte[4] = 0x10;
-        dataDAC._byte[5] = LeftVol;
-        dataDAC._byte[6] = 0x11;
-        dataDAC._byte[7] = RightVol;
-
-    sprintf (buffer, "%u", RightVol);
-
-    if(strlen (buffer) == 2)
-    {
-        dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
-        dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
-        dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-        dataDSPY2_info._byte[10] = d_0;//digit 2/4 0
-        dataDSPY3_info._byte[10] = ConvertDigit4(buffer[0]);//digit 3/4
-        dataDSPY4_info._byte[10] = ConvertDigit4(buffer[1]);//digit 4/4
-        dataDSPY5_info._byte[10] = d_void;//digit dp/4
-    }
-    else
-    {
-        if (RightVol != 255)
-        {
-            dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
-            dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
-            dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-            dataDSPY2_info._byte[10] = ConvertDigit4(buffer[0]);//digit 2/4
-            dataDSPY3_info._byte[10] = ConvertDigit4(buffer[1]);//digit 3/4
-            dataDSPY4_info._byte[10] = ConvertDigit4(buffer[2]);//digit 4/4
-            dataDSPY5_info._byte[10] = d_void;//digit dp/4
-        }
-    }
-		
-    flagspi.info = 1;
+    SoundLevel(RightVol);
 }
 
 void VolumeDown(void)
 { 
-    if(RightVol <= 14)
+    if(RightVol > 14)
     {
-        RightVol = 12;
-        LeftVol = 12;
-
-        dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
-        dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
-        dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-        dataDSPY2_info._byte[10] = d_m;//digit 2/4 m
-        dataDSPY3_info._byte[10] = d_i;//digit 3/4 i
-        dataDSPY4_info._byte[10] = d_n;//digit 4/4 n
-        dataDSPY5_info._byte[10] = d_void;//digit dp/4
-    }
-    else
-    {
-	RightVol -= 3;
-	LeftVol -= 3;
+	RightVol -= 2;
+	LeftVol -= 2;
     }
 
     dataDAC.DataToWrite = 4;
@@ -1015,37 +965,78 @@ void VolumeDown(void)
     dataDAC._byte[6] = 0x11;
     dataDAC._byte[7] = RightVol;
 
-    sprintf (buffer, "%u", RightVol);
+    SoundLevel(RightVol);
+}
 
-    if(strlen (buffer) == 2 && RightVol > 14)
+void SoundLevel(unsigned char Level)
+{ 
+
+    if(Level == 255)
     {
         dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
         dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
         dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-        dataDSPY2_info._byte[10] = d_0;//digit 2/4 0
-        dataDSPY3_info._byte[10] = ConvertDigit4(buffer[0]);//digit 3/4
-        dataDSPY4_info._byte[10] = ConvertDigit4(buffer[1]);//digit 4/4
+        dataDSPY2_info._byte[10] = d_m;//digit 2/4 m
+        dataDSPY3_info._byte[10] = d_a;//digit 3/4 a
+        dataDSPY4_info._byte[10] = d_x;//digit 4/4 x
         dataDSPY5_info._byte[10] = d_void;//digit dp/4
+        flagspi.info = 1;
+        return;
+    }
+
+    if(Level <= 14)
+    {
+        dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
+        dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
+        dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
+        dataDSPY2_info._byte[10] = d_m;//digit 2/4 m
+        dataDSPY3_info._byte[10] = d_i;//digit 3/4 i
+        dataDSPY4_info._byte[10] = d_n;//digit 4/4 n
+        dataDSPY5_info._byte[10] = d_void;//digit dp/4
+        flagspi.info = 1;
+        return;
+    }
+
+    Level = (255 - Level)/2;
+    sprintf (buffer, "%u", Level);
+
+    if(strlen (buffer) == 1)
+    {
+        dataDSPY2_info._byte[11] = D_d;//digit 1/2 
+        dataDSPY1_info._byte[11] = D_b;//digit 2/2 
+        dataDSPY1_info._byte[10] = d_minus;//digit 1/4 
+        dataDSPY2_info._byte[10] = ConvertDigit4(buffer[0]);//digit 2/4 
+        dataDSPY3_info._byte[10] = d_void;//digit 3/4
+        dataDSPY4_info._byte[10] = d_void;//digit 4/4
+        dataDSPY5_info._byte[10] = d_void;//digit dp/4
+        flagspi.info = 1;
+        return;
+    }
+    if(strlen (buffer) == 2)
+    {
+        dataDSPY2_info._byte[11] = D_d;//digit 1/2 
+        dataDSPY1_info._byte[11] = D_b;//digit 2/2 
+        dataDSPY1_info._byte[10] = d_minus;//digit 1/4 
+        dataDSPY2_info._byte[10] = ConvertDigit4(buffer[0]);//digit 2/4 
+        dataDSPY3_info._byte[10] = ConvertDigit4(buffer[1]);//digit 3/4
+        dataDSPY4_info._byte[10] = d_void;//digit 4/4
+        dataDSPY5_info._byte[10] = d_void;//digit dp/4
+        flagspi.info = 1;
+        return;
     }
     else
     {
-        if (RightVol > 14)
-        {
-            dataDSPY2_info._byte[11] = D_v;//digit 1/2 V
-            dataDSPY1_info._byte[11] = D_o;//digit 2/2 o
-            dataDSPY1_info._byte[10] = d_l;//digit 1/4 l
-            dataDSPY2_info._byte[10] = ConvertDigit4(buffer[0]);//digit 2/4
-            dataDSPY3_info._byte[10] = ConvertDigit4(buffer[1]);//digit 3/4
-            dataDSPY4_info._byte[10] = ConvertDigit4(buffer[2]);//digit 4/4
-            dataDSPY5_info._byte[10] = d_void;//digit dp/4
-        }
+        dataDSPY2_info._byte[11] = D_d;//digit 1/2 
+        dataDSPY1_info._byte[11] = D_b;//digit 2/2 
+        dataDSPY1_info._byte[10] = d_minus;//digit 1/4 
+        dataDSPY2_info._byte[10] = ConvertDigit4(buffer[0]);//digit 2/4 
+        dataDSPY3_info._byte[10] = ConvertDigit4(buffer[1]);//digit 3/4
+        dataDSPY4_info._byte[10] = ConvertDigit4(buffer[2]);//digit 4/4
+        dataDSPY5_info._byte[10] = d_void;//digit dp/4
+        flagspi.info = 1;
+        return;
     }
-		
-    flagspi.info = 1;
-
-
 }
-
 void Mute(unsigned char State)
 { 
     if (State)

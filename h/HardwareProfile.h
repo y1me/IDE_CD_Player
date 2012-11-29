@@ -97,7 +97,7 @@
     /** Display **********************************************************/
 
  	#define D_a 72
- 	#define D_b 64
+ 	#define D_b 224
  	#define D_c 208
  	#define D_d 100
  	#define D_e 80
@@ -170,7 +170,9 @@
  	#define d_7 234
  	#define d_8 128
  	#define d_9 160
+ 	#define d_minus 253
  	#define d_void 255
+
 
         #define d_pp 250
 
