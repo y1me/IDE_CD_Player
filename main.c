@@ -598,7 +598,7 @@ void main(void)
 	}
 	Reset_Hard();
 
-	for(i=0;i<58;i++)
+	for(i=0;i<40;i++)
 	{
 		Delay10KTCYx(0);
 	}
