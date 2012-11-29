@@ -4,6 +4,7 @@
 #include "HardwareProfile.h"
 #include <fct_ide.h>
 #include <user_interface.h>
+#include <interface_register.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -551,6 +552,11 @@ unsigned char ProcessIrCode(long *trameToProcess)
                             if (!flagspi.aux)   EjectLoad();
                         return 1;
 
+                        case KEY2:
+                            Reset_Hard();
+                            CDStatus = STOP;
+                        return 1;
+
 			break;
 
 			case KEY7:
@@ -617,11 +623,6 @@ unsigned char ProcessIrCode(long *trameToProcess)
                             VolumeUp();
                             return 1;
 			break;
-
-                        case KEY2:
-                            //if (!flagspi.aux)   INQUIRY(&product_id.Device_Type);
-                            return 1;
-                        break;
 
                         case KEY3:
                             SetAuxIn();

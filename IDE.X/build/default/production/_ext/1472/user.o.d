@@ -3,6 +3,7 @@ build/default/production/_ext/1472/user.o:  \
 	/home/blobby/ProgC/lecteur_cd/Code_IDE/h/spi_ide.h  \
 	/opt/microchip/mplabc18/v3.40/h/delays.h  \
 	/home/blobby/ProgC/lecteur_cd/Code_IDE/h/fct_ide.h  \
+	/home/blobby/ProgC/lecteur_cd/Code_IDE/h/interface_register.h  \
 	/opt/microchip/mplabc18/v3.40/h/stdio.h  \
 	/opt/microchip/mplabc18/v3.40/h/string.h  \
 	/home/blobby/ProgC/lecteur_cd/Code_IDE/h/user.h  \
