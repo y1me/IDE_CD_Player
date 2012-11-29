@@ -1139,7 +1139,6 @@ void SetAuxIn(void)
         if (!flag.mech)  EjectLoad();
         else
         {
-            Load();
             flag.mech = 1;
             CDStatus = STOP;
             TrackToPlay = 1;
