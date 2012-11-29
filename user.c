@@ -739,7 +739,8 @@ void PlayPause(void)
             break;
 
             case  PAUSE:
-                Resume();
+                //Resume();
+                Play_MSF_address(&CurrentAbsAddrMSF, &TOC[0]);
                 CDStatus = PLAY;
                 //Sound
                 dataDAC.DataToWrite = 2;

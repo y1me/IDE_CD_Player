@@ -1,6 +1,7 @@
 #include <p18f6722.h>
 #include <HardwareProfile.h>
 #include <interface_register.h>
+#include "user.h"
 
 unsigned char Mech_Stat(void)  //reset CD drive
 {
@@ -285,6 +286,54 @@ unsigned char Play_MSF(unsigned char Track, unsigned char *TOC_start)  //play cd
                 if (i == Nb_Retry) return 3;
 	}
 	
+	ptest = &cmd[0];
+	i = 0;
+	while(ptest < &cmd[13])
+	{
+		Write_Data(ptest);
+		*ptest++;
+		*ptest++;
+		i++;
+	}
+		test = 0xAA;
+		test = Read_Status();
+	if (test == 0x51)	return 2;
+	else return 0;
+}
+
+unsigned char Play_MSF_address(unsigned char *Address, unsigned char *TOC_start)  //play cd track to the end of cd
+{
+
+	 unsigned int i;
+	 unsigned char test,end_track,cmd[16];
+	 unsigned char *ptest;
+
+	end_track = *(TOC_start + 3);
+
+	if (*Address > end_track) return 1;
+
+	for(i=0;i<16;i++)
+	{
+		cmd[i] = 0;
+	}
+
+	cmd[0] = 0x47;
+	cmd[3] = *(Address + 1);
+	cmd[4] = *(Address + 2);
+	cmd[5] = *(Address + 3);
+	cmd[6] = *(TOC_start + 9 + end_track*8);
+	cmd[7] = *(TOC_start + 10 + end_track*8);
+	cmd[8] = *(TOC_start + 11 + end_track*8);
+	Write_command(0xA0);
+	test = 0xAA;
+	i = 0;
+	while (test != 0x58)
+	{
+		i++;
+		test = Read_Status();
+                if (i == Nb_Retry) return 3;
+	}
+
 	ptest = &cmd[0];
 	i = 0;
 	while(ptest < &cmd[13])

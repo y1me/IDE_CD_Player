@@ -7,6 +7,7 @@ unsigned char Eject(void);
 unsigned char Load(void);
 unsigned char Read_TOC(unsigned char *);
 unsigned char Play_MSF(unsigned char , unsigned char *);
+unsigned char Play_MSF_address(unsigned char *, unsigned char *);
 unsigned char Read_AbsMSF_SubCh(unsigned char *);
 unsigned char Read_RelMSF_SubCh(unsigned char *);
 unsigned char F_Scan(unsigned char *);
