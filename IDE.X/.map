@@ -1,5 +1,5 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Thu Nov 29 19:00:05 2012
+Linker Map File - Created Thu Dec 20 17:25:16 2012
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -42,27 +42,27 @@ Linker Map File - Created Thu Nov 29 19:00:05 2012
            .code___init.o       code   0x000014    program   0x000002
                low_vector       code   0x000018    program   0x000006
           .code_fct_ide.o       code   0x00001e    program   0x002408
-             .code_user.o       code   0x002426    program   0x001a06
-             .code_main.o       code   0x003e2c    program   0x000f8e
-         .code_vfprintf.o       code   0x004dba    program   0x000c22
-.code_interface_register.o       code   0x0059dc    program   0x0004b4
-          .code_sprintf.o       code   0x005e90    program   0x0000ac
-                     PROG       code   0x005f3c    program   0x0000a6
-               _cinit_scn       code   0x005fe2    program   0x00009e
-         .code_pic_init.o       code   0x006080    program   0x000092
-             .code_putc.o       code   0x006112    program   0x000084
-          .code_fxm3232.o       code   0x006196    program   0x000070
-                   STRING       code   0x006206    program   0x000066
-              .code_spi.o       code   0x00626c    program   0x000054
-         .code_fxd3232u.o       code   0x0062c0    program   0x000048
-             D10KTCYXCODE       code   0x006308    program   0x00002e
-         .code_fxd1616u.o       code   0x006336    program   0x00002c
-                    CTYPE       code   0x006362    program   0x000024
-                    .code       code   0x006386    program   0x000020
-             _startup_scn       code   0x0063a6    program   0x00001c
-                    STDIO       code   0x0063c2    program   0x00001c
-              D10TCYXCODE       code   0x0063de    program   0x000016
-      .romdata_vfprintf.o    romdata   0x0063f4    program   0x000011
+             .code_user.o       code   0x002426    program   0x001a2a
+             .code_main.o       code   0x003e50    program   0x000f8e
+         .code_vfprintf.o       code   0x004dde    program   0x000c22
+.code_interface_register.o       code   0x005a00    program   0x0004b4
+          .code_sprintf.o       code   0x005eb4    program   0x0000ac
+                     PROG       code   0x005f60    program   0x0000a6
+               _cinit_scn       code   0x006006    program   0x00009e
+         .code_pic_init.o       code   0x0060a4    program   0x000092
+             .code_putc.o       code   0x006136    program   0x000084
+          .code_fxm3232.o       code   0x0061ba    program   0x000070
+                   STRING       code   0x00622a    program   0x000066
+              .code_spi.o       code   0x006290    program   0x000054
+         .code_fxd3232u.o       code   0x0062e4    program   0x000048
+             D10KTCYXCODE       code   0x00632c    program   0x00002e
+         .code_fxd1616u.o       code   0x00635a    program   0x00002c
+                    CTYPE       code   0x006386    program   0x000024
+                    .code       code   0x0063aa    program   0x000020
+             _startup_scn       code   0x0063ca    program   0x00001c
+                    STDIO       code   0x0063e6    program   0x00001c
+              D10TCYXCODE       code   0x006402    program   0x000016
+      .romdata_vfprintf.o    romdata   0x006418    program   0x000011
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
     .config_300006_main.o    romdata   0x300006    program   0x000001
@@ -116,231 +116,231 @@ Linker Map File - Created Thu Nov 29 19:00:05 2012
                            ---------   ---------      
                             0x000000    0x000010      
                             0x000012    0x000015      
-                            0x000018    0x006404      
+                            0x000018    0x006428      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300006    0x300006      
-            25605 out of 132120 program addresses used, program memory utilization is 19%
+            25641 out of 132120 program addresses used, program memory utilization is 19%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-            ConvertDigit2   0x003a86    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-            ConvertDigit4   0x003a08    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                   D10K_1   0x006314    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x006320    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x006312    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x0063ee    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0063e6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                   D1616S   0x005f5e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x005f6c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x005f68    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x005f7e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x005f4e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-             Delay10KTCYx   0x006308    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x0063de    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+            ConvertDigit2   0x003aaa    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+            ConvertDigit4   0x003a2c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                   D10K_1   0x006338    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x006344    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x006336    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x006412    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00640a    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                   D1616S   0x005f82    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x005f90    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x005f8c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x005fa2    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x005f72    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+             Delay10KTCYx   0x00632c    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x006402    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
                     Eject   0x0003ee    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                EjectLoad   0x002e8c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 FXD1616S   0x005f3c    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x006336    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
-                 FXD3232U   0x0062c0    program     extern C:\MCC18\v3_39\src\traditional\math\fxd3232u.c
-                 FXM1616S   0x005f88    program     extern C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
-                  FXM3232   0x006196    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
+                EjectLoad   0x002eb0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 FXD1616S   0x005f60    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x00635a    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x0062e4    program     extern C:\MCC18\v3_39\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x005fac    program     extern C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
+                  FXM3232   0x0061ba    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
                    F_Scan   0x0018c2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
               HandleSIRSC   0x002b2a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                   INQUIRY   0x0020a4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                 INT_Init   0x0060bc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+                 INT_Init   0x0060e0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
                  InitDSPY   0x002868    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
              InitMCP23S17   0x002426    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
               InitPCM1792   0x0027ee    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
               InitSRC4392   0x002670    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                      Load   0x000556    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-              LoadTOCInfo   0x003322    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+              LoadTOCInfo   0x003346    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                 Mech_Stat   0x00001e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                     Mute   0x00384c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                NextTrack   0x0030ca    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                     Mute   0x003870    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                NextTrack   0x0030ee    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                     Pause   0x001dda    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                PlayPause   0x002f26    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                PlayPause   0x002f4a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                  Play_MSF   0x000a5a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
          Play_MSF_address   0x000d16    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                Port_Init   0x006080    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-            PreviousTrack   0x0031da    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                ProcessIO   0x003b04    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                Port_Init   0x0060a4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+            PreviousTrack   0x0031fe    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                ProcessIO   0x003b28    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
             ProcessIrCode   0x002c32    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
                    R_Scan   0x001a9a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
         Read_AbsMSF_SubCh   0x000fa0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-          Read_Alt_status   0x005b88    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-            Read_Cyl_high   0x005c02    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-             Read_Cyl_low   0x005c7c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-                Read_Data   0x005cf6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-            Read_Dev_Head   0x005ddc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-               Read_Error   0x005a12    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+          Read_Alt_status   0x005bac    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+            Read_Cyl_high   0x005c26    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+             Read_Cyl_low   0x005ca0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+                Read_Data   0x005d1a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+            Read_Dev_Head   0x005e00    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+               Read_Error   0x005a36    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
         Read_RelMSF_SubCh   0x001442    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-          Read_Sect_Count   0x005a52    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-         Read_Sect_Number   0x005acc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-              Read_Status   0x005b48    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+          Read_Sect_Count   0x005a76    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+         Read_Sect_Number   0x005af0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+              Read_Status   0x005b6c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
                  Read_TOC   0x0006be    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-               Reset_Hard   0x0059dc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+               Reset_Hard   0x005a00    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
                    Resume   0x001f3c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-                 SetAuxIn   0x0038f2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-               SoundLevel   0x00367e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 Spi_Init   0x0060a8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+                 SetAuxIn   0x003916    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               SoundLevel   0x0036a2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 Spi_Init   0x0060cc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
                      Stop   0x001c7c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/fct_ide.c
-               TSIGN1616A   0x005fd4    program     static C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
-              Timer0_Init   0x0060d0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-              Timer1_Init   0x0060e4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-              Timer2_Init   0x0060f4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-         UpdateCurrentMSF   0x003570    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-               VolumeDown   0x003638    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 VolumeUp   0x0035e8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-           Write_Cyl_high   0x005c42    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-            Write_Cyl_low   0x005cbc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-               Write_Data   0x005d4c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-            Write_Dev_Ctr   0x005da2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-           Write_Dev_Head   0x005e1c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-           Write_Features   0x005e56    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-         Write_Sect_Count   0x005a92    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-        Write_Sect_Number   0x005b0e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-            Write_command   0x005bc8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-                   _2jEnd   0x006256    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-       _D10KTCYXCODE_0010   0x006318    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x006324    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x0063e8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0063ea    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0063ec    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-      ___case_90_lbl00091   0x00489c    program     static                          
-      ___case_94_lbl00094   0x0048cc    program     static                          
-      ___case_98_lbl00095   0x0048fe    program     static                          
-      ___case_99_lbl00099   0x004978    program     static                          
-      ___default_lbl00104   0x004a44    program     static                          
-           ___if_lbl00107   0x004a74    program     static                          
-       ___return_lbl00000   0x006306    program     static                          
+               TSIGN1616A   0x005ff8    program     static C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
+              Timer0_Init   0x0060f4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+              Timer1_Init   0x006108    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+              Timer2_Init   0x006118    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+         UpdateCurrentMSF   0x003594    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               VolumeDown   0x00365c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 VolumeUp   0x00360c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+           Write_Cyl_high   0x005c66    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+            Write_Cyl_low   0x005ce0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+               Write_Data   0x005d70    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+            Write_Dev_Ctr   0x005dc6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+           Write_Dev_Head   0x005e40    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+           Write_Features   0x005e7a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+         Write_Sect_Count   0x005ab6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+        Write_Sect_Number   0x005b32    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+            Write_command   0x005bec    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+                   _2jEnd   0x00627a    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+       _D10KTCYXCODE_0010   0x00633c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x006348    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x00640c    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00640e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x006410    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+      ___case_90_lbl00091   0x0048c0    program     static                          
+      ___case_94_lbl00094   0x0048f0    program     static                          
+      ___case_98_lbl00095   0x004922    program     static                          
+      ___case_99_lbl00099   0x00499c    program     static                          
+      ___default_lbl00104   0x004a68    program     static                          
+           ___if_lbl00107   0x004a98    program     static                          
+       ___return_lbl00000   0x00632a    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x006360    program     static                          
-       ___return_lbl00000   0x006204    program     static                          
-       ___return_lbl00001   0x005a48    program     static                          
+       ___return_lbl00000   0x006384    program     static                          
+       ___return_lbl00000   0x006228    program     static                          
+       ___return_lbl00001   0x005a6c    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00001   0x0063c0    program     static                          
-       ___return_lbl00002   0x005a88    program     static                          
-       ___return_lbl00002   0x00607e    program     static                          
-       ___return_lbl00003   0x005ac4    program     static                          
-       ___return_lbl00004   0x005b04    program     static                          
-       ___return_lbl00005   0x005b40    program     static                          
-       ___return_lbl00006   0x005b7e    program     static                          
-       ___return_lbl00007   0x005bbe    program     static                          
-       ___return_lbl00008   0x005bfa    program     static                          
-       ___return_lbl00009   0x005c38    program     static                          
-       ___return_lbl00010   0x005c74    program     static                          
-       ___return_lbl00011   0x005cb2    program     static                          
-       ___return_lbl00012   0x005cee    program     static                          
-       ___return_lbl00013   0x005d44    program     static                          
-       ___return_lbl00014   0x005d9a    program     static                          
-       ___return_lbl00015   0x005dd4    program     static                          
-       ___return_lbl00016   0x005e12    program     static                          
-       ___return_lbl00017   0x005e4e    program     static                          
-       ___return_lbl00018   0x005e88    program     static                          
-   ___switchexit_lbl00020   0x004a44    program     static                          
+       ___return_lbl00001   0x0063e4    program     static                          
+       ___return_lbl00002   0x005aac    program     static                          
+       ___return_lbl00002   0x0060a2    program     static                          
+       ___return_lbl00003   0x005ae8    program     static                          
+       ___return_lbl00004   0x005b28    program     static                          
+       ___return_lbl00005   0x005b64    program     static                          
+       ___return_lbl00006   0x005ba2    program     static                          
+       ___return_lbl00007   0x005be2    program     static                          
+       ___return_lbl00008   0x005c1e    program     static                          
+       ___return_lbl00009   0x005c5c    program     static                          
+       ___return_lbl00010   0x005c98    program     static                          
+       ___return_lbl00011   0x005cd6    program     static                          
+       ___return_lbl00012   0x005d12    program     static                          
+       ___return_lbl00013   0x005d68    program     static                          
+       ___return_lbl00014   0x005dbe    program     static                          
+       ___return_lbl00015   0x005df8    program     static                          
+       ___return_lbl00016   0x005e36    program     static                          
+       ___return_lbl00017   0x005e72    program     static                          
+       ___return_lbl00018   0x005eac    program     static                          
+   ___switchexit_lbl00020   0x004a68    program     static                          
                __config_0   0x300001    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                __config_1   0x300003    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                __config_2   0x300006    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                    __init   0x000014    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
-                   __pa_0   0x0056fa    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_1   0x005702    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_10   0x0057b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_11   0x0057c4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_12   0x0057da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_13   0x0057f4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_14   0x00580c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_15   0x00581c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_16   0x005832    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_17   0x005844    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_18   0x005856    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_19   0x005860    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_2   0x00570c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_20   0x005870    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_21   0x005880    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_22   0x005890    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_23   0x00589c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_24   0x0058aa    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_25   0x0058b2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_26   0x0058bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_27   0x0058c6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_28   0x0058ce    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_29   0x0058dc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_3   0x005716    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_30   0x0058f8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_31   0x005912    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_32   0x00592c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_33   0x005944    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_34   0x00594e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_35   0x00595c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_36   0x005964    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_37   0x00596e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_38   0x00597e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_39   0x00598c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_4   0x00572e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_40   0x005998    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_41   0x0059a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_42   0x0059ac    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_43   0x0059b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_44   0x0059bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_45   0x0059c6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_46   0x0059d2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_5   0x005742    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_6   0x00575e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_7   0x005768    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_8   0x005774    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_9   0x005796    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_0   0x00571e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x005726    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0057da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0057e8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0057fe    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x005818    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x005830    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x005840    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x005856    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x005868    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00587a    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x005884    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x005730    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x005894    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x0058a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_22   0x0058b4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_23   0x0058c0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0058ce    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0058d6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0058e0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0058ea    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0058f2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x005900    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00573a    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x00591c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x005936    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x005950    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x005968    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x005972    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x005980    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x005988    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x005992    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x0059a2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x0059b0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x005752    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x0059bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0059c8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0059d0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0059da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0059e0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0059ea    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0059f6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x005766    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x005782    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x00578c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x005798    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x0057ba    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
                __string_0   0x00000e    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-              __tmplbl_42   0x005890    program     static                          
-              __tmplbl_43   0x0056d8    program     static                          
-              __tmplbl_44   0x0056be    program     static                          
-              __tmplbl_85   0x004e10    program     static                          
-            __zero_memory   0x006386    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                _do_cinit   0x005fe2    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+              __tmplbl_42   0x0058b4    program     static                          
+              __tmplbl_43   0x0056fc    program     static                          
+              __tmplbl_44   0x0056e2    program     static                          
+              __tmplbl_85   0x004e34    program     static                          
+            __zero_memory   0x0063aa    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                _do_cinit   0x006006    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                   _false   0x006302    program     static                          
-                 _startup   0x0063a6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-              _usart_putc   0x0063c2    program     extern C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
+                   _false   0x006326    program     static                          
+                 _startup   0x0063ca    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+              _usart_putc   0x0063e6    program     extern C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
                _user_putc   0x000012    program     extern C:\MCC18\v3_39\src\traditional\stdclib\_user_putc.c
-                compare_l   0x00639c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                copy_loop   0x006054    program     static                          
-            copy_one_byte   0x00605a    program     static                          
-                     done   0x00607e    program     static                          
-             done_copying   0x006068    program     static                          
-                  endloop   0x00635c    program     static                          
-            int_flag_high   0x003e2c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-             int_flag_low   0x004c5a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+                compare_l   0x0063c0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                copy_loop   0x006078    program     static                          
+            copy_one_byte   0x00607e    program     static                          
+                     done   0x0060a2    program     static                          
+             done_copying   0x00608c    program     static                          
+                  endloop   0x006380    program     static                          
+            int_flag_high   0x003e50    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+             int_flag_low   0x004c7e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
     interrupt_vector_high   0x000008    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
      interrupt_vector_low   0x000018    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-                  isdigit   0x006362    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-                     jEnd   0x006258    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x006220    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                    jLoop   0x006216    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                    jLoop   0x006240    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                   jMatch   0x006382    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x006384    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-                     loop   0x0063d2    program     static C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
-                     loop   0x0063b6    program     static                          
-                     loop   0x006340    program     static                          
-                     loop   0x0062ce    program     static                          
-                   loop_h   0x006394    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                   loop_l   0x00639e    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                     main   0x004c92    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-                     putc   0x006112    program     extern C:\MCC18\v3_39\src\traditional\stdclib\putc.c
-                 s_digits   0x0063f4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-            s_put_n_chars   0x004dba    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   spi_in   0x006290    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
-                  spi_out   0x00626c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
-                  sprintf   0x005e90    program     extern C:\MCC18\v3_39\src\traditional\stdclib\sprintf.c
-                   strlen   0x006206    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x006222    program     extern C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                     test   0x005ffc    program     static                          
-                 vfprintf   0x004de6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-               zero_block   0x006394    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                  isdigit   0x006386    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+                     jEnd   0x00627c    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x006244    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00623a    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                    jLoop   0x006264    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                   jMatch   0x0063a6    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0063a8    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+                     loop   0x0063f6    program     static C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
+                     loop   0x0063da    program     static                          
+                     loop   0x006364    program     static                          
+                     loop   0x0062f2    program     static                          
+                   loop_h   0x0063b8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                   loop_l   0x0063c2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                     main   0x004cb6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+                     putc   0x006136    program     extern C:\MCC18\v3_39\src\traditional\stdclib\putc.c
+                 s_digits   0x006418    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+            s_put_n_chars   0x004dde    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   spi_in   0x0062b4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
+                  spi_out   0x006290    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
+                  sprintf   0x005eb4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\sprintf.c
+                   strlen   0x00622a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x006246    program     extern C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                     test   0x006020    program     static                          
+                 vfprintf   0x004e0a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+               zero_block   0x0063b8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
@@ -736,188 +736,188 @@ Linker Map File - Created Thu Nov 29 19:00:05 2012
                  InitDSPY   0x002868    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
               HandleSIRSC   0x002b2a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
             ProcessIrCode   0x002c32    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                EjectLoad   0x002e8c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                PlayPause   0x002f26    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                NextTrack   0x0030ca    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-            PreviousTrack   0x0031da    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-              LoadTOCInfo   0x003322    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-         UpdateCurrentMSF   0x003570    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 VolumeUp   0x0035e8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-               VolumeDown   0x003638    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-               SoundLevel   0x00367e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                     Mute   0x00384c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                 SetAuxIn   0x0038f2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-            ConvertDigit4   0x003a08    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-            ConvertDigit2   0x003a86    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-                ProcessIO   0x003b04    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
-            int_flag_high   0x003e2c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-      ___case_90_lbl00091   0x00489c    program     static                          
-      ___case_94_lbl00094   0x0048cc    program     static                          
-      ___case_98_lbl00095   0x0048fe    program     static                          
-      ___case_99_lbl00099   0x004978    program     static                          
-   ___switchexit_lbl00020   0x004a44    program     static                          
-      ___default_lbl00104   0x004a44    program     static                          
-           ___if_lbl00107   0x004a74    program     static                          
-             int_flag_low   0x004c5a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-                     main   0x004c92    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
-            s_put_n_chars   0x004dba    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                 vfprintf   0x004de6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-              __tmplbl_85   0x004e10    program     static                          
-              __tmplbl_44   0x0056be    program     static                          
-              __tmplbl_43   0x0056d8    program     static                          
-                   __pa_0   0x0056fa    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_1   0x005702    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_2   0x00570c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_3   0x005716    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_4   0x00572e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_5   0x005742    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_6   0x00575e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_7   0x005768    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_8   0x005774    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                   __pa_9   0x005796    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_10   0x0057b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_11   0x0057c4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_12   0x0057da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_13   0x0057f4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_14   0x00580c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_15   0x00581c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_16   0x005832    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_17   0x005844    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_18   0x005856    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_19   0x005860    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_20   0x005870    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_21   0x005880    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_22   0x005890    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-              __tmplbl_42   0x005890    program     static                          
-                  __pa_23   0x00589c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_24   0x0058aa    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_25   0x0058b2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_26   0x0058bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_27   0x0058c6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_28   0x0058ce    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_29   0x0058dc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_30   0x0058f8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_31   0x005912    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_32   0x00592c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_33   0x005944    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_34   0x00594e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_35   0x00595c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_36   0x005964    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_37   0x00596e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_38   0x00597e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_39   0x00598c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_40   0x005998    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_41   0x0059a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_42   0x0059ac    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_43   0x0059b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_44   0x0059bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_45   0x0059c6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-                  __pa_46   0x0059d2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
-               Reset_Hard   0x0059dc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-               Read_Error   0x005a12    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00001   0x005a48    program     static                          
-          Read_Sect_Count   0x005a52    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00002   0x005a88    program     static                          
-         Write_Sect_Count   0x005a92    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00003   0x005ac4    program     static                          
-         Read_Sect_Number   0x005acc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00004   0x005b04    program     static                          
-        Write_Sect_Number   0x005b0e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00005   0x005b40    program     static                          
-              Read_Status   0x005b48    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00006   0x005b7e    program     static                          
-          Read_Alt_status   0x005b88    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00007   0x005bbe    program     static                          
-            Write_command   0x005bc8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00008   0x005bfa    program     static                          
-            Read_Cyl_high   0x005c02    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00009   0x005c38    program     static                          
-           Write_Cyl_high   0x005c42    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00010   0x005c74    program     static                          
-             Read_Cyl_low   0x005c7c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00011   0x005cb2    program     static                          
-            Write_Cyl_low   0x005cbc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00012   0x005cee    program     static                          
-                Read_Data   0x005cf6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00013   0x005d44    program     static                          
-               Write_Data   0x005d4c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00014   0x005d9a    program     static                          
-            Write_Dev_Ctr   0x005da2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00015   0x005dd4    program     static                          
-            Read_Dev_Head   0x005ddc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00016   0x005e12    program     static                          
-           Write_Dev_Head   0x005e1c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00017   0x005e4e    program     static                          
-           Write_Features   0x005e56    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
-       ___return_lbl00018   0x005e88    program     static                          
-                  sprintf   0x005e90    program     extern C:\MCC18\v3_39\src\traditional\stdclib\sprintf.c
-                 FXD1616S   0x005f3c    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x005f4e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                   D1616S   0x005f5e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x005f68    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x005f6c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x005f7e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
-                 FXM1616S   0x005f88    program     extern C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x005fd4    program     static C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
-                _do_cinit   0x005fe2    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     test   0x005ffc    program     static                          
-                copy_loop   0x006054    program     static                          
-            copy_one_byte   0x00605a    program     static                          
-             done_copying   0x006068    program     static                          
-                     done   0x00607e    program     static                          
-       ___return_lbl00002   0x00607e    program     static                          
-                Port_Init   0x006080    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-                 Spi_Init   0x0060a8    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-                 INT_Init   0x0060bc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-              Timer0_Init   0x0060d0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-              Timer1_Init   0x0060e4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-              Timer2_Init   0x0060f4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
-                     putc   0x006112    program     extern C:\MCC18\v3_39\src\traditional\stdclib\putc.c
-                  FXM3232   0x006196    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x006204    program     static                          
-                   strlen   0x006206    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                    jLoop   0x006216    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     jEnd   0x006220    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x006222    program     extern C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                    jLoop   0x006240    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                   _2jEnd   0x006256    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x006258    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
-                  spi_out   0x00626c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
-                   spi_in   0x006290    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
-                 FXD3232U   0x0062c0    program     extern C:\MCC18\v3_39\src\traditional\math\fxd3232u.c
-                     loop   0x0062ce    program     static                          
-                   _false   0x006302    program     static                          
-       ___return_lbl00000   0x006306    program     static                          
-             Delay10KTCYx   0x006308    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x006312    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x006314    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x006318    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x006320    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x006324    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                 FXD1616U   0x006336    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
-                     loop   0x006340    program     static                          
-                  endloop   0x00635c    program     static                          
-       ___return_lbl00000   0x006360    program     static                          
-                  isdigit   0x006362    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-                   jMatch   0x006382    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x006384    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
-            __zero_memory   0x006386    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                   loop_h   0x006394    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-               zero_block   0x006394    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                compare_l   0x00639c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                   loop_l   0x00639e    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
-                 _startup   0x0063a6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     loop   0x0063b6    program     static                          
-       ___return_lbl00001   0x0063c0    program     static                          
-              _usart_putc   0x0063c2    program     extern C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
-                     loop   0x0063d2    program     static C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
-              Delay10TCYx   0x0063de    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0063e6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x0063e8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0063ea    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0063ec    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x0063ee    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                 s_digits   0x0063f4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                EjectLoad   0x002eb0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                PlayPause   0x002f4a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                NextTrack   0x0030ee    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+            PreviousTrack   0x0031fe    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+              LoadTOCInfo   0x003346    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+         UpdateCurrentMSF   0x003594    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 VolumeUp   0x00360c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               VolumeDown   0x00365c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+               SoundLevel   0x0036a2    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                     Mute   0x003870    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                 SetAuxIn   0x003916    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+            ConvertDigit4   0x003a2c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+            ConvertDigit2   0x003aaa    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+                ProcessIO   0x003b28    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/user.c
+            int_flag_high   0x003e50    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+      ___case_90_lbl00091   0x0048c0    program     static                          
+      ___case_94_lbl00094   0x0048f0    program     static                          
+      ___case_98_lbl00095   0x004922    program     static                          
+      ___case_99_lbl00099   0x00499c    program     static                          
+   ___switchexit_lbl00020   0x004a68    program     static                          
+      ___default_lbl00104   0x004a68    program     static                          
+           ___if_lbl00107   0x004a98    program     static                          
+             int_flag_low   0x004c7e    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+                     main   0x004cb6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
+            s_put_n_chars   0x004dde    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                 vfprintf   0x004e0a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+              __tmplbl_85   0x004e34    program     static                          
+              __tmplbl_44   0x0056e2    program     static                          
+              __tmplbl_43   0x0056fc    program     static                          
+                   __pa_0   0x00571e    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x005726    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x005730    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00573a    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x005752    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x005766    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x005782    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x00578c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x005798    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x0057ba    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0057da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0057e8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0057fe    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x005818    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x005830    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x005840    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x005856    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x005868    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00587a    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x005884    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x005894    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x0058a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_22   0x0058b4    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+              __tmplbl_42   0x0058b4    program     static                          
+                  __pa_23   0x0058c0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0058ce    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0058d6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0058e0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0058ea    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0058f2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x005900    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x00591c    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x005936    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x005950    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x005968    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x005972    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x005980    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x005988    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x005992    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x0059a2    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x0059b0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x0059bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0059c8    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0059d0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0059da    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0059e0    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0059ea    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0059f6    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
+               Reset_Hard   0x005a00    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+               Read_Error   0x005a36    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00001   0x005a6c    program     static                          
+          Read_Sect_Count   0x005a76    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00002   0x005aac    program     static                          
+         Write_Sect_Count   0x005ab6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00003   0x005ae8    program     static                          
+         Read_Sect_Number   0x005af0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00004   0x005b28    program     static                          
+        Write_Sect_Number   0x005b32    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00005   0x005b64    program     static                          
+              Read_Status   0x005b6c    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00006   0x005ba2    program     static                          
+          Read_Alt_status   0x005bac    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00007   0x005be2    program     static                          
+            Write_command   0x005bec    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00008   0x005c1e    program     static                          
+            Read_Cyl_high   0x005c26    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00009   0x005c5c    program     static                          
+           Write_Cyl_high   0x005c66    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00010   0x005c98    program     static                          
+             Read_Cyl_low   0x005ca0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00011   0x005cd6    program     static                          
+            Write_Cyl_low   0x005ce0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00012   0x005d12    program     static                          
+                Read_Data   0x005d1a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00013   0x005d68    program     static                          
+               Write_Data   0x005d70    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00014   0x005dbe    program     static                          
+            Write_Dev_Ctr   0x005dc6    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00015   0x005df8    program     static                          
+            Read_Dev_Head   0x005e00    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00016   0x005e36    program     static                          
+           Write_Dev_Head   0x005e40    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00017   0x005e72    program     static                          
+           Write_Features   0x005e7a    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/interface_register.c
+       ___return_lbl00018   0x005eac    program     static                          
+                  sprintf   0x005eb4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\sprintf.c
+                 FXD1616S   0x005f60    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x005f72    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                   D1616S   0x005f82    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x005f8c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x005f90    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x005fa2    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 FXM1616S   0x005fac    program     extern C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x005ff8    program     static C:\MCC18\v3_39\src\traditional\math\fxm1616s.asm
+                _do_cinit   0x006006    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x006020    program     static                          
+                copy_loop   0x006078    program     static                          
+            copy_one_byte   0x00607e    program     static                          
+             done_copying   0x00608c    program     static                          
+                     done   0x0060a2    program     static                          
+       ___return_lbl00002   0x0060a2    program     static                          
+                Port_Init   0x0060a4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+                 Spi_Init   0x0060cc    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+                 INT_Init   0x0060e0    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+              Timer0_Init   0x0060f4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+              Timer1_Init   0x006108    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+              Timer2_Init   0x006118    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/pic_init.c
+                     putc   0x006136    program     extern C:\MCC18\v3_39\src\traditional\stdclib\putc.c
+                  FXM3232   0x0061ba    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x006228    program     static                          
+                   strlen   0x00622a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00623a    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     jEnd   0x006244    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x006246    program     extern C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x006264    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                   _2jEnd   0x00627a    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x00627c    program     static C:\MCC18\v3_39\src\traditional\stdclib\slenpgm.asm
+                  spi_out   0x006290    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
+                   spi_in   0x0062b4    program     extern /home/blobby/ProgC/lecteur_cd/Code_IDE/spi.c
+                 FXD3232U   0x0062e4    program     extern C:\MCC18\v3_39\src\traditional\math\fxd3232u.c
+                     loop   0x0062f2    program     static                          
+                   _false   0x006326    program     static                          
+       ___return_lbl00000   0x00632a    program     static                          
+             Delay10KTCYx   0x00632c    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x006336    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x006338    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x00633c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x006344    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x006348    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                 FXD1616U   0x00635a    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
+                     loop   0x006364    program     static                          
+                  endloop   0x006380    program     static                          
+       ___return_lbl00000   0x006384    program     static                          
+                  isdigit   0x006386    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+                   jMatch   0x0063a6    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0063a8    program     static C:\MCC18\v3_39\src\traditional\stdclib\isdigit.asm
+            __zero_memory   0x0063aa    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                   loop_h   0x0063b8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+               zero_block   0x0063b8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                compare_l   0x0063c0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                   loop_l   0x0063c2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F6722.asm
+                 _startup   0x0063ca    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x0063da    program     static                          
+       ___return_lbl00001   0x0063e4    program     static                          
+              _usart_putc   0x0063e6    program     extern C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
+                     loop   0x0063f6    program     static C:\MCC18\v3_39\src\pmc_common\USART\_usartpc.asm
+              Delay10TCYx   0x006402    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00640a    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x00640c    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00640e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x006410    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x006412    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                 s_digits   0x006418    program     static C:\MCC18\v3_39\src\traditional\stdclib\vfprintf.c
                __config_0   0x300001    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                __config_1   0x300003    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c
                __config_2   0x300006    program     static /home/blobby/ProgC/lecteur_cd/Code_IDE/main.c

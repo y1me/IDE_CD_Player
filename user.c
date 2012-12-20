@@ -578,9 +578,9 @@ unsigned char ProcessIrCode(long *trameToProcess)
 
 				TrackToPlay = 1;
 				CDStatus = STOP;
-                                dataDSPY2_info._byte[11] = D_void;//digit 1/2 V
-                                dataDSPY1_info._byte[11] = D_void;//digit 2/2 o
-                                dataDSPY1_info._byte[10] = d_s;//digit 1/4 l
+                                dataDSPY2_info._byte[11] = D_void;//digit 1/2 
+                                dataDSPY1_info._byte[11] = D_void;//digit 2/2 
+                                dataDSPY1_info._byte[10] = d_s;//digit 1/4 
                                 dataDSPY2_info._byte[10] = d_t;//digit 2/4
                                 dataDSPY3_info._byte[10] = d_o;//digit 3/4
                                 dataDSPY4_info._byte[10] = d_p;//digit 4/4
@@ -591,12 +591,12 @@ unsigned char ProcessIrCode(long *trameToProcess)
 			break;
 
 			case KEY10:
-                            if (!flagspi.aux)   NextTrack();
+                            if (!flagspi.aux && CDStatus != PAUSE)   NextTrack();
                             return 1;
 			break;
 
 			case KEY11:
-                            if (!flagspi.aux)   PreviousTrack();
+                            if (!flagspi.aux && CDStatus != PAUSE)   PreviousTrack();
                             return 1;
 			break;
 
