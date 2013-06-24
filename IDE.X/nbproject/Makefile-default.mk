@@ -45,11 +45,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/pic_init.o ${OBJECTDIR}/_ext/1472/interface_register.o ${OBJECTDIR}/_ext/1472/fct_ide.o ${OBJECTDIR}/_ext/1472/spi.o ${OBJECTDIR}/_ext/1472/user.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/1472/pic_init.o.d ${OBJECTDIR}/_ext/1472/interface_register.o.d ${OBJECTDIR}/_ext/1472/fct_ide.o.d ${OBJECTDIR}/_ext/1472/spi.o.d ${OBJECTDIR}/_ext/1472/user.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/pic_init.o ${OBJECTDIR}/_ext/1472/interface_register.o ${OBJECTDIR}/_ext/1472/spi.o ${OBJECTDIR}/_ext/1472/user.o ${OBJECTDIR}/_ext/1472/fct_ide.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/1472/pic_init.o.d ${OBJECTDIR}/_ext/1472/interface_register.o.d ${OBJECTDIR}/_ext/1472/spi.o.d ${OBJECTDIR}/_ext/1472/user.o.d ${OBJECTDIR}/_ext/1472/fct_ide.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/pic_init.o ${OBJECTDIR}/_ext/1472/interface_register.o ${OBJECTDIR}/_ext/1472/fct_ide.o ${OBJECTDIR}/_ext/1472/spi.o ${OBJECTDIR}/_ext/1472/user.o
+OBJECTFILES=${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/pic_init.o ${OBJECTDIR}/_ext/1472/interface_register.o ${OBJECTDIR}/_ext/1472/spi.o ${OBJECTDIR}/_ext/1472/user.o ${OBJECTDIR}/_ext/1472/fct_ide.o
 
 
 CFLAGS=
@@ -113,13 +113,6 @@ ${OBJECTDIR}/_ext/1472/interface_register.o: ../interface_register.c  nbproject/
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/interface_register.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/interface_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/1472/fct_ide.o: ../fct_ide.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
-	@${RM} ${OBJECTDIR}/_ext/1472/fct_ide.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/fct_ide.o   ../fct_ide.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/fct_ide.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/fct_ide.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/_ext/1472/spi.o: ../spi.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 
 	@${RM} ${OBJECTDIR}/_ext/1472/spi.o.d 
@@ -133,6 +126,13 @@ ${OBJECTDIR}/_ext/1472/user.o: ../user.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/user.o   ../user.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/user.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/user.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1472/fct_ide.o: ../fct_ide.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${RM} ${OBJECTDIR}/_ext/1472/fct_ide.o.d 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/fct_ide.o   ../fct_ide.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/fct_ide.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/fct_ide.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
@@ -156,13 +156,6 @@ ${OBJECTDIR}/_ext/1472/interface_register.o: ../interface_register.c  nbproject/
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/interface_register.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/interface_register.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/1472/fct_ide.o: ../fct_ide.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
-	@${RM} ${OBJECTDIR}/_ext/1472/fct_ide.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/fct_ide.o   ../fct_ide.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/fct_ide.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/fct_ide.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/_ext/1472/spi.o: ../spi.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 
 	@${RM} ${OBJECTDIR}/_ext/1472/spi.o.d 
@@ -176,6 +169,13 @@ ${OBJECTDIR}/_ext/1472/user.o: ../user.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/user.o   ../user.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/user.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/user.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1472/fct_ide.o: ../fct_ide.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${RM} ${OBJECTDIR}/_ext/1472/fct_ide.o.d 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"/opt/microchip/mplabc18/v3.40/h" -I"/home/blobby/ProgC/lecteur_cd/Code_IDE/h" -ml -oa- -o-  -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/fct_ide.o   ../fct_ide.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/fct_ide.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/fct_ide.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

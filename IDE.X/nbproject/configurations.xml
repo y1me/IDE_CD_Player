@@ -23,9 +23,9 @@
       <itemPath>../main.c</itemPath>
       <itemPath>../pic_init.c</itemPath>
       <itemPath>../interface_register.c</itemPath>
-      <itemPath>../fct_ide.c</itemPath>
       <itemPath>../spi.c</itemPath>
       <itemPath>../user.c</itemPath>
+      <itemPath>../fct_ide.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

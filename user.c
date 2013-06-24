@@ -1,3 +1,4 @@
+
 #include "user.h"
 #include "spi_ide.h"
 #include "delays.h"
@@ -62,6 +63,11 @@ volatile   DATA_DISPLAY    dataDSPY2_info;
 volatile   DATA_DISPLAY    dataDSPY3_info;
 volatile   DATA_DISPLAY    dataDSPY4_info;
 volatile   DATA_DISPLAY    dataDSPY5_info;
+
+#pragma udata
+
+#pragma udata gpr4
+volatile   DATA_IDE        dataBUFFER_ide;
 #pragma udata
 
 #pragma udata gpr5
@@ -76,6 +82,8 @@ unsigned char TimeoutEN;
 char buffer[20];
 int length;
 #pragma udata
+
+
 
 
 /** P R I V A T E  P R O T O T Y P E S ***************************************/
@@ -567,7 +575,7 @@ unsigned char ProcessIrCode(long *trameToProcess)
 			case KEY9:
                             if (!flagspi.aux)
                             {
-				Stop();
+				Stop(dataBUFFER_ide);
                                 //Mute
                                 dataDAC.DataToWrite = 2;
                                 dataDAC.DataRead = 0;
@@ -638,9 +646,9 @@ return 0;
 
 void EjectLoad(void)
 {   
-	if ( Mech_Stat() == 1 )
+	if ( Mech_Stat(dataBUFFER_ide) == 1 )
 	{
-            Load();
+            Load(dataBUFFER_ide);
             flag.mech = 1;
             CDStatus = STOP;
             TrackToPlay = 1;
@@ -655,7 +663,7 @@ void EjectLoad(void)
 	}
 	else 
 	{
-            Eject();
+            Eject(dataBUFFER_ide);
             flag.mech = 0;
             flag.nodisc = 1;
             dataDSPY2._byte[11] = D_void;//digit 1/2 r
@@ -686,9 +694,9 @@ void PlayPause(void)
     dataDAC._byte[4] = 0x12;
     dataDAC._byte[5] = 0xA1;
 
-    if ( Mech_Stat() == 1 )
+    if ( Mech_Stat(dataBUFFER_ide) == 1 )
     {
-        Load();
+        Load(dataBUFFER_ide);
     }
 
     if ( flag.mech == 0)
@@ -704,7 +712,7 @@ void PlayPause(void)
         switch ( CDStatus )
             {
             case  STOP:
-                Play_MSF(TrackToPlay, &TOC[0]);
+                Play_MSF(TrackToPlay, &TOC[0],dataBUFFER_ide);
                 CDStatus = PLAY;
                 //Sound
                 dataDAC.DataToWrite = 2;
@@ -725,7 +733,7 @@ void PlayPause(void)
             break;
 
             case  PLAY:
-                Pause();
+                Pause(dataBUFFER_ide);
                 CDStatus = PAUSE;
                 //Mute
                 dataDAC.DataToWrite = 2;
@@ -747,7 +755,7 @@ void PlayPause(void)
 
             case  PAUSE:
                 //Resume();
-                Play_MSF_address(&CurrentAbsAddrMSF, &TOC[0]);
+                Play_MSF_address(&CurrentAbsAddrMSF.track, &TOC[0],dataBUFFER_ide);
                 CDStatus = PLAY;
                 //Sound
                 dataDAC.DataToWrite = 2;
@@ -757,9 +765,9 @@ void PlayPause(void)
                 dataDAC._byte[4] = 0x12;
                 dataDAC._byte[5] = 0xA0;
 
-                dataDSPY2_info._byte[11] = D_void;//digit 1/2 V
-                dataDSPY1_info._byte[11] = D_void;//digit 2/2 o
-                dataDSPY1_info._byte[10] = d_p;//digit 1/4 l
+                dataDSPY2_info._byte[11] = D_void;//digit 1/2 
+                dataDSPY1_info._byte[11] = D_void;//digit 2/2 
+                dataDSPY1_info._byte[10] = d_p;//digit 1/4 
                 dataDSPY2_info._byte[10] = d_l;//digit 2/4
                 dataDSPY3_info._byte[10] = d_a;//digit 3/4
                 dataDSPY4_info._byte[10] = d_y;//digit 4/4
@@ -780,7 +788,7 @@ void NextTrack(void)
                 
 		if (CDStatus != STOP)
 		{
-			Play_MSF(TrackToPlay, &TOC[0]);
+			Play_MSF(TrackToPlay, &TOC[0],dataBUFFER_ide);
 			CDStatus = PLAY;
 		}
                 else
@@ -815,13 +823,13 @@ void PreviousTrack(void)
                     {
                             if ( TrackToPlay == 1 )	TrackToPlay = EndAddrMSF.track - 1;
                             else	TrackToPlay -= 1;
-                            Play_MSF(TrackToPlay, &TOC[0]);
+                            Play_MSF(TrackToPlay, &TOC[0],dataBUFFER_ide);
                             CDStatus = PLAY;
 
                     }
                     else
                     {
-                            Play_MSF(TrackToPlay, &TOC[0]);
+                            Play_MSF(TrackToPlay, &TOC[0],dataBUFFER_ide);
                             CDStatus = PLAY;
                     }
 		}
@@ -865,7 +873,7 @@ void LoadTOCInfo(void)
 	
 	while( k !=0 && i < 50 )
 	{
-		k = Read_TOC(&TOC[0]);
+		k = Read_TOC(&TOC[0],dataBUFFER_ide);
 		i++;
 	}
 	if( TOC[2] == 1 )
@@ -914,14 +922,14 @@ void UpdateCurrentMSF(void)
 		flag.tim0 = 0;
 		if ( flag.mech )
 		{	
-			AudioStatus = Read_AbsMSF_SubCh(&CurrentAbsAddrMSF.track);
-			Read_RelMSF_SubCh(&CurrentRelAddrMSF.track);			
+			AudioStatus = Read_AbsMSF_SubCh(&CurrentAbsAddrMSF.track,dataBUFFER_ide);
+			Read_RelMSF_SubCh(&CurrentRelAddrMSF.track,dataBUFFER_ide);
 			if (CDStatus == PLAY)
 			{	
 				TrackToPlay = CurrentRelAddrMSF.track;
 				if (AudioStatus == 0x13 || AudioStatus == 0x14 || AudioStatus == 0x15)
 				{
-					Stop();
+					Stop(dataBUFFER_ide);
 					TrackToPlay = 1;
 					CDStatus = STOP;
 				}
@@ -1084,7 +1092,7 @@ void SetAuxIn(void)
 {
     if (!flagspi.aux)
     {
-        Stop();
+        Stop(dataBUFFER_ide);
         TrackToPlay = 1;
         CDStatus = STOP;
 
