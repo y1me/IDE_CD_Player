@@ -3,6 +3,7 @@
 #include <interface_register.h>
 #include "user.h"
 #include "user_interface.h"
+#include "delays.h"
 
 unsigned char Mech_Stat(DATA_IDE dataide)  //reset CD drive
 {
@@ -158,10 +159,17 @@ unsigned char Load(DATA_IDE dataide)  //reset CD drive
 		*dataide.ptest++;
 		dataide.i++;
 	}
-		dataide.test = 0xAA;
+
+        dataide.test = 0xAA;
+	dataide.i = 0;
+        Nop();
+	while ((dataide.test | 0x80) != 0x00)
+	{
+		dataide.i++;
 		dataide.test = Read_Status();
-	if (dataide.test == 0x51)	return 0;
-	else return 1;
+                if (dataide.i == Nb_Retry) return 1;
+	}
+	return 0;
 }
 
 unsigned char Read_TOC(unsigned char *data, DATA_IDE dataide )  //read TOC
@@ -182,6 +190,7 @@ unsigned char Read_TOC(unsigned char *data, DATA_IDE dataide )  //read TOC
 	Write_command(0xA0);
 	dataide.test = 0xAA;
 	dataide.i = 0;
+        Nop();
 	while (dataide.test != 0x58)
 	{
 		dataide.i++;
@@ -199,6 +208,7 @@ unsigned char Read_TOC(unsigned char *data, DATA_IDE dataide )  //read TOC
 		*dataide.ptest++;
 		dataide.i++;
 	}
+
 	dataide.i = 0;
 	dataide.test = 0xAA;
 	while ((dataide.test != 0x58))

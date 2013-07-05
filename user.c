@@ -67,7 +67,7 @@ volatile   DATA_DISPLAY    dataDSPY5_info;
 #pragma udata
 
 #pragma udata gpr4
-volatile   DATA_IDE        dataBUFFER_ide;
+ram   DATA_IDE        dataBUFFER_ide;
 #pragma udata
 
 #pragma udata gpr5
